@@ -55,3 +55,16 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+# sources/recipes for Omega-required
+github "chrome",          "~> 1.1"
+github "firefox",         "~> 1.1"
+github "java",            "~> 1.1"
+github "iterm2",          "~> 1.0"
+github "sublime_text_2",  "~> 1.1"
+github "intellij",        "~> 1.4"
+
+# sources/recipes for bstreet-desired
+github "osx",             "~> 2.2"
+github "keepassx",        "~> 1.0"
+
