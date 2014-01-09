@@ -1,7 +1,10 @@
 people::itgumby {
 
   include iterm2
-  include
+  include sublime_text_2
+  # include intellij
+  # include osx
+  include keepassx
 
   $home     = "/Users/${::boxen_user}"
   $srcdir   = "${home}/src"
