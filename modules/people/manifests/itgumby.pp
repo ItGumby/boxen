@@ -1,6 +1,6 @@
 class people::itgumby {
 
-  include iterm2
+  include iterm2::stable
 
   # include sublime_text_2
   # include intellij

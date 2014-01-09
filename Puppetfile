@@ -68,4 +68,4 @@ github "intellij",        "~> 1.4"
 # sources/recipes for bstreet-desired
 github "osx",             "~> 2.2"
 github "keepassx",        "~> 1.0"
-
+github "adium",           "~> 1.3"
