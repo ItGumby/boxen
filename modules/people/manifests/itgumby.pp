@@ -1,10 +1,11 @@
-people::itgumby {
+class people::itgumby {
 
   include iterm2
-  include sublime_text_2
+
+  # include sublime_text_2
   # include intellij
   # include osx
-  include keepassx
+  # include keepassx
 
   $home     = "/Users/${::boxen_user}"
   $srcdir   = "${home}/src"
@@ -18,13 +19,14 @@ people::itgumby {
   #   require => File[$my]
   # }
 
-  repository { "${srcdir}/dotfiles" :
-    source => 'git@bitbucket.org:itgumby/dotfiles.git',
-    path => "${home}/dotfiles"
-  }
+  # repository { "${srcdir}/dotfiles" :
+  #   source => 'git@bitbucket.org:itgumby/dotfiles.git',
+  #   path => "${home}/dotfiles"
+  # }
 
-  repository { "${srcdir}/bin" :
-    source => 'git@bitbucket.org:itgumby/bin.git',
-    path => "${home}/bin"
-  }
+  # repository { "${srcdir}/bin" :
+  #   source => 'git@bitbucket.org:itgumby/bin.git',
+  #   path => "${home}/bin"
+  # }
+
 }
