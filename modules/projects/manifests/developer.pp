@@ -1,5 +1,7 @@
 class projects::developer {
 
+  $home     = "/Users/$id"
+
   include sublime_text_2
 
   include iterm2::stable
