@@ -59,7 +59,8 @@ github "xquartz",    "1.1.0"
 # sources/recipes for Omega-required
 github "chrome",          "~> 1.1"
 github "firefox",         "~> 1.1"
-github "java",            "~> 1.1"
+github "java",            "~> 1.2"
+
 github "iterm2",          "~> 1.0"
 github "sublime_text_2",  "~> 1.1"
 github "intellij",        "~> 1.4"
