@@ -1,16 +1,22 @@
-class projects::sublime_text_2 {
+class projects::developer {
 
   include sublime_text_2
+
+  include iterm2::stable
+  include iterm2::colors::solarized_light
+  include iterm2::colors::solarized_dark
+
+  #include intellij
 
   file { "${home}/bin":
      ensure => directory,
   }
 
-  # file { "${home}/bin/subl":
-  #    ensure => 'link',
-  #    target => '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl',
-  #    require => [ Package[SublimeText2], File["${home}/bin"] ]
-  # }
+  file { "${home}/bin/subl":
+     ensure => 'link',
+     target => '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl',
+     require => [ Package[SublimeText2], File["${home}/bin"] ]
+  }
 
   ########################################
   #

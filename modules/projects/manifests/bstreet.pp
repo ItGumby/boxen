@@ -1,14 +1,9 @@
 class projects::bstreet {
 
-  include iterm2::stable
-  include iterm2::colors::solarized_light
-  include iterm2::colors::solarized_dark
-
-  #include intellij
   include keepassx
   include adium
 
-  #include osx::recovery_message { 'If this Mac is found, please call 720-251-0532': }
+  osx::recovery_message { 'If this Mac is found, please call 720-251-0532': }
   include osx::global::disable_key_press_and_hold    # disable press-and-hold for accented character entry
   include osx::global::enable_keyboard_control_access    # enables the keyboard for navigating controls in dialogs
   include osx::global::expand_print_dialog    # expand the print dialog by default
