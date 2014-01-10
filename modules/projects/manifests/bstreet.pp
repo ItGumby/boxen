@@ -2,6 +2,8 @@ class projects::bstreet {
 
   include keepassx
   include adium
+  include evernote
+  include dropbox
 
   osx::recovery_message { 'If this Mac is found, please call 720-251-0532': }
   include osx::global::disable_key_press_and_hold    # disable press-and-hold for accented character entry
@@ -35,4 +37,6 @@ class projects::bstreet {
   include osx::no_network_dsstores    # disable creation of .DS_Store files on network shares
   include osx::software_update    # download and install software updates
 
+  # media things
+  include vlc
 }

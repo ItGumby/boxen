@@ -1,12 +1,23 @@
 class projects::developer {
 
-  $home     = "/Users/$id"
+  $home     = "/Users/${::boxen_user}"
 
+  include p4merge
   include sublime_text_2
 
   include iterm2::stable
   include iterm2::colors::solarized_light
   include iterm2::colors::solarized_dark
+
+  include virtualbox
+
+  include vagrant
+  # vagrant::plugin { 'vagrant-vmware-fusion':
+  #   license => 'puppet:///modules/people/joe/licenses/fusion.lic',
+  # }
+  # vagrant::box { 'squeeze64/vmware_fusion':
+  #   source => 'https://s3.amazonaws.com/github-ops/vagrant/squeeze64-6.0.7-vmware_fusion.box'
+  # }
 
   #include intellij
 
