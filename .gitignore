@@ -10,3 +10,7 @@
 /shared/*
 !/shared/README.md
 /vendor/gems/
+
+*.lock
+/vendor/puppet/cache/
+
